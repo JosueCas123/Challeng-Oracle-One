@@ -1,0 +1,44 @@
+/* $telefono: 480px;
+$tablet: 768px;
+$desktop: 1200px; */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    background-color:#F3F5FC ;
+}
+
+
+.header-logo, img{
+    width: 3.1rem;
+    height: 4.6rem;
+    margin-top: 2.4rem;
+    margin-left: 1.6rem;
+}
+
+textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+    color: #0A3871;
+    
+}
+
+.textoEntrda{
+    width: 100%;
+    height: auto;
+    background-color: #F3F5FC;
+    border: none;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.contenedor-textArea{
+    margin-top:5rem;
+    margin-left: 2rem;
+}
