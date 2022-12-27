@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //console.log(btnDesencriptar)
     btnDesencriptar.onclick = function(){
-                desencriptar()
+                desencriptar(texto)
                inputText.value = ''
         }
     }
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
    
 
-  function desencriptar(){
+  function desencriptar(texto){
         texto = texto.replaceAll("ai","a");
         texto = texto.replaceAll("imes","i");
         texto = texto.replaceAll("enter","e");

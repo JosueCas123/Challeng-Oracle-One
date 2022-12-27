@@ -260,7 +260,7 @@ textarea::placeholder {
     }
 
     .texto-mensaje{
-        margin-bottom: 40rem;
+        margin-bottom: 6rem;
     }
 }
 
@@ -274,6 +274,7 @@ textarea::placeholder {
 .texto-mensaje{
 
     font-size: 1.6rem;
+    height: 48rem;
     font-family: var(--fuentePrincipal);
     border: none;
     resize: none;
