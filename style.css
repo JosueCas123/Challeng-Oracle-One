@@ -1,6 +1,12 @@
 /* $telefono: 480px;
 $tablet: 768px;
 $desktop: 1200px; */
+:root{
+    --fuentePrincipal: 'Inter', sans-serif;
+    --fuenteLatam: 'Josefin Sans', sans-serif;
+
+}
+
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -14,31 +20,303 @@ body{
     background-color:#F3F5FC ;
 }
 
+.herder-logo{
+    position: relative;
+}
+
 
 .header-logo, img{
     width: 3.1rem;
     height: 4.6rem;
     margin-top: 2.4rem;
     margin-left: 1.6rem;
+    
+    color:white;
+}
+span{
+    display: block;
+    font-size: 3.6rem;
+    font-family: var(--fuenteLatam);
+    white-space: nowrap;
+    border-right:4px solid ;
+    width: 7ch;
+    margin-left: 40px;
+    color:#0A3871;
+    
+
+    animation: typing 2s steps(7), blink .5s infinite step-end alternate;
+    overflow: hidden;
+
 }
 
-textarea::placeholder {
-    font-family: 'Inter', sans-serif;
+
+@keyframes typing{
+    from{width:0}
+}
+@keyframes blink{
+    50% {border-color: transparent}
+}
+
+textarea::placeholder{
+    font-family: var(--fuentePrincipal);
     font-size: 3.2rem;
+}
+
+textarea.focus:focus{
+    outline-style: none;
+}
+textarea#texto{
+    border: none;
+    background-color:#F3F5FC;
+    margin: 8rem ;
+}
+@media (min-width: 375px) {
+    
+    .header-logo, img{
+        margin-left:8.5rem;
+    }
+
+    textarea#texto{
+        min-width: 300px;
+        min-height: 300px;
+        resize: none;
+        font-size: 3rem;
+        margin-left: 2rem;
+        font-family: var(--fuentePrincipal);
+    }
+    .btnCopiar{
+        width: 279px;
+    }
+    
+    .contenedor-restricion{
+        position: absolute;
+        top: 54rem;
+        left: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    textarea#texto{
+        min-width: 700px;
+        margin-left: 3rem;
+    }
+    
+
+}
+textarea::placeholder {
+    font-family: var(--fuentePrincipal);
+    font-style: normal;
     color: #0A3871;
+
+}
+
+
+.contenedor-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.restriccion{
+    display: inline;
+    font-size: 1.2rem;
+    font-family: var(--fuenteLatam);
+    font-style: normal;
+    color: #495057;
+    opacity: 0.8;
+    width: 20rem;
+}
+.img-restricion{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+}
+@media (min-width: 768px) {
+    .contenedor-button{
+        display: flex;
+        flex-direction: row;
+    }
+    .mensaje{
+        width: 68.8rem;
+     }
+ 
+     .btnCopiar{
+         width: 62.4rem;
+         height: 6.7rem;
+     }
+     
+    .contenedor-restricion{
+        position: absolute;
+        top: 54rem;
+        left: -6.5rem;
+    }
+    /* .footer{
+        position: absolute;
+        bottom: -98px;
+        background-color: #0A3871;
+        width: 100%;
+        padding: 10px ;
+     } */
+}
+.button{
+    background-color: #0A3871;
+    padding: 2.4rem;
+    width: 34.3rem;
+    height: 6.7rem;
+    border-radius:2.4rem;
+    font-size: 1.6rem;
+}
+.button-azul{
+    margin: 2rem;
+    color:#ffffff ;
+    font-family:var(--fuentePrincipal);
+    font-style: normal;
+
+}
+.button-white{
+    background-color: white;
+    color:#0A3871 ;
+    border-color: #0A3871;
+    font-style: normal;
+
+}
+
+.mensaje{
+    width: 32.7rem;
+    height: 18.6x rem;
+    padding: 3.2rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 3.2rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);;
+}
+
+.mensaje-texto{
+    font-family: var(--fuentePrincipal);
+    font-style: normal;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5 ;
+    font-size: 2.4rem;
+}
+.mesaje-parrafo{
+    text-align: center ;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 1440px ) {
+    .contenedor-main{
+       position: relative;
+       height: 81rem;
+    }
+
+    .mensaje{
+        position: relative;
+        width: 40rem;
+        height: 80rem;
+        top: -58rem;
+        right: -66.2rem;
+    }
+    
+    .contenedor-button{
+        position: absolute;
+        margin: 10rem 30rem;
+    }
+
+
+    .contenedor-restricion{
+        position: absolute;
+        top: 54rem;
+        left: 25rem;
+    }
+
+    .imagen{
+        background-image: url(/img/Muñeco.png);
+        width: 33.6rem; 
+        height: 30rem;
+        margin: 0;
+    }
+
+    textarea#texto{
+        min-width: 68.0rem;
+        min-height: 28.8rem;
+        margin: 10rem 30rem;
+    }
+    .header-logo, img{
+        margin-top: 4rem;
+        margin-left: 8rem;
+    }
+    .btnCopiar{
+        width: 33.6rem;
+        margin-top: 20rem;
+    }
+
+    .texto-mensaje{
+        margin-bottom: 40rem;
+    }
+}
+
+.mensaje{
+    word-wrap: break-word;
+ 
+}
+.mensaje-none{
+    display: none;
+}
+.texto-mensaje{
+
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+    border: none;
+    resize: none;
     
 }
 
-.textoEntrda{
-    width: 100%;
-    height: auto;
-    background-color: #F3F5FC;
-    border: none;
-    margin-top: 2rem;
-    font-size: 2rem;
+.btnCopiar{
+    height: 67px;
+    padding: 2.4rem;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: var(--fuentePrincipal);
+    font-style: normal;
+    font-weight:400;
+    font-size: 1.6rem;
+    color: #0A3871;
+    
+}
+.btnCopiar:hover{
+    cursor: pointer;
+    background-color: #0A3871;
+    color: white;
 }
 
-.contenedor-textArea{
-    margin-top:5rem;
-    margin-left: 2rem;
+
+.button-white:hover{
+    background-color: #609ED4;
+}
+
+.button:hover{
+    cursor: pointer;
+    
+}
+
+.footer{
+    background-color: #0A3871;
+    margin: 0;
+    padding: 5px;
+
+}
+.footer-texto{
+    color: white;
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
 }
