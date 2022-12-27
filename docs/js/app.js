@@ -38,6 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
             inputText.value = '';
             
         }
+        btnDesencriptar.onclick = function(){
+            desencriptar(texto)
+           inputText.value = ''
+    }
+
     }
 
     // la funcion encritar recibe el texto y lo encripta 
@@ -97,26 +102,48 @@ document.addEventListener('DOMContentLoaded', () => {
     inputText.value = parrafoSeleccionado.value
 
     //console.log(btnDesencriptar)
-    btnDesencriptar.onclick = function(){
-                desencriptar(texto)
-               inputText.value = ''
-        }
-    }
+   
      //hacer click a llamar btn desencritar
-    
+   }
     
    
 
   function desencriptar(texto){
+    console.log(texto)
+    
+        elminarHtml();
         texto = texto.replaceAll("ai","a");
         texto = texto.replaceAll("imes","i");
         texto = texto.replaceAll("enter","e");
         texto = texto.replaceAll("ober","o");
         texto = texto.replaceAll("ufat","u");
-        parrafo.textContent = texto
+
+        console.log(texto)
+        if (texto === '') {
+            divInfo.classList.add('mensaje-info')
+            
+        }else {
+            divInfo.classList.add('mensaje-none')
+            
+           
+            parrafo.classList.add('texto-mensaje','focus')
+            parrafo.textContent = texto
+            
+            divMensaje.appendChild(parrafo)
+
+          
+            const btnCopiar = document.createElement('button');
+            btnCopiar.classList.add('btnCopiar')
+            btnCopiar.textContent = 'Copiar'
+            btnCopiar.onclick = copiarTexto;
+            divMensaje.appendChild(btnCopiar)
+
+           
+        }
+        
+       // parrafo.textContent = texto
     
     //inputText.value = parrafoSeleccionado.value
-    
     
   }
 

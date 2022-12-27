@@ -70,7 +70,7 @@ textarea#texto{
     background-color:#F3F5FC;
     margin: 8rem ;
 }
-@media (min-width: 375px) {
+
     
     .header-logo, img{
         margin-left:8.5rem;
@@ -91,9 +91,9 @@ textarea#texto{
     .contenedor-restricion{
         position: absolute;
         top: 54rem;
-        left: 1rem;
+        left: -7rem;
     }
-}
+
 
 @media (min-width: 768px) {
 
