@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
    
 
   function desencriptar(texto){
-    console.log(texto)
+   // console.log(texto)
     
         elminarHtml();
         texto = texto.replaceAll("ai","a");
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         texto = texto.replaceAll("ober","o");
         texto = texto.replaceAll("ufat","u");
 
-        console.log(texto)
+       // console.log(texto)
         if (texto === '') {
             divInfo.classList.add('mensaje-info')
             
