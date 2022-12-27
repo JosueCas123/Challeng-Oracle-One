@@ -239,7 +239,7 @@ textarea::placeholder {
     }
 
     .imagen{
-        background-image: url(/img/Muñeco.png);
+        background-image: url(/docs/img/Muñeco.png);
         width: 33.6rem; 
         height: 30rem;
         margin: 0;
