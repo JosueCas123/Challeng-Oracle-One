@@ -77,7 +77,8 @@ textarea#texto{
     }
 
     textarea#texto{
-        width: 300px;
+
+        width: 315px;
         min-height: 300px;
         resize: none;
         font-size: 3rem;
