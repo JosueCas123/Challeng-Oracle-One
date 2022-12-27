@@ -77,7 +77,7 @@ textarea#texto{
     }
 
     textarea#texto{
-        min-width: 300px;
+        width: 300px;
         min-height: 300px;
         resize: none;
         font-size: 3rem;
@@ -90,7 +90,8 @@ textarea#texto{
     
     .contenedor-restricion{
         position: absolute;
-        top: 54rem;
+
+        top: 49rem;
         left: -7rem;
     }
 
